@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 209, 214);
+}
+.container {
+  background-color: rgba(227, 239, 252, 0.933);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: min(90%, 31em);
+  padding: 4em 0;
+  border-radius: 8px;
+  box-shadow: 0 1em 3em rgba(147, 169, 193, 0.933);
+}
+.timer-display {
+  position: relative;
+  width: 110%;
+  background-color: rgba(147, 169, 193, 0.933);
+  color: white;
+  left: -5%;
+  padding: 0.7em 0;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  box-shadow: 0 0.5em 1em rgba(227, 239, 252, 0.933);
+}
+.buttons {
+  width: 80%;
+  margin: 2em auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* butonlar arasında styling */
+.buttons button {
+  font-size: 1.7em;
+  background-color: rgba(147, 169, 193, 0.933);
+  color: rgba(227, 239, 252, 0.933);
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  outline: none;
+}
