@@ -2,9 +2,12 @@ let miliseconds = 0,
   seconds = 0,
   minutes = 0,
   hours = 0,
-  flag = "";
+  flag = "",
+  counter = 0;
 
 let timerRef = document.querySelector(".timer-display");
+let tur = document.getElementById("tur");
+
 document.getElementById("start-timer").addEventListener("click", () => {
   if (flag !== "") {
     clearInterval(flag);
@@ -29,6 +32,7 @@ function displayTimer() {
 document.getElementById("pause-timer").addEventListener("click", () => {
   clearInterval(flag);
 });
+
 document.getElementById("reset-timer").addEventListener("click", () => {
   clearInterval(flag);
   miliseconds = 0;
@@ -36,4 +40,11 @@ document.getElementById("reset-timer").addEventListener("click", () => {
   minutes = 0;
   hours = 0;
   timerRef.innerHTML = `00 : 00 : 00 : 000`;
+  tur.innerHTML = "";
+});
+
+document.getElementById("tur-timer").addEventListener("click", () => {
+  clearInterval(flag);
+  counter++;
+  tur.innerHTML += `${counter}. tur süren ${hours} : ${minutes} :${seconds} : ${miliseconds} <br>`;
 });

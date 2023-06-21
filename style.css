@@ -13,7 +13,8 @@ body {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  width: min(90%, 31em);
+  width: min(90%, 36em);
+  height: 36em;
   padding: 4em 0;
   border-radius: 8px;
   box-shadow: 0 1em 3em rgba(147, 169, 193, 0.933);
@@ -49,4 +50,13 @@ body {
   padding: 8px;
   cursor: pointer;
   outline: none;
+}
+p {
+  color: rgba(63, 76, 89, 0.933);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2em auto 0 auto;
+  font-size: 1.5em;
 }
