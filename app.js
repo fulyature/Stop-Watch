@@ -44,7 +44,6 @@ document.getElementById("reset-timer").addEventListener("click", () => {
 });
 
 document.getElementById("tur-timer").addEventListener("click", () => {
-  clearInterval(flag);
   counter++;
   tur.innerHTML += `${counter}. tur süren ${hours} : ${minutes} :${seconds} : ${miliseconds} <br>`;
 });

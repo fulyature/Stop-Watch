@@ -14,7 +14,8 @@ body {
   left: 50%;
   top: 50%;
   width: min(90%, 36em);
-  height: 36em;
+  min-height: 36em;
+  height: auto;
   padding: 4em 0;
   border-radius: 8px;
   box-shadow: 0 1em 3em rgba(147, 169, 193, 0.933);
